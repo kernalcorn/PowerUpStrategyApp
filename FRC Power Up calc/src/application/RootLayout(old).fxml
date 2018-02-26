@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RootLayoutController">
+   <center>
+      <VBox alignment="CENTER" prefHeight="419.0" prefWidth="657.0" BorderPane.alignment="CENTER">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="25.0" stroke="#ffffff00" strokeType="INSIDE" width="125.0" />
+            <Label fx:id="lblTime" text="2:00">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="64.0" prefWidth="600.0">
+               <children>
+                  <Label fx:id="lblBlueScore" text="0" textFill="BLUE">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="25.0" stroke="#ffffff00" strokeType="INSIDE" width="25.0" />
+                  <Label fx:id="lblDash" prefHeight="42.0" prefWidth="15.0" text="-">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="25.0" stroke="#ffffff00" strokeType="INSIDE" width="25.0" />
+                  <Label fx:id="lblRedScore" text="0" textFill="RED">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="42.0" prefWidth="600.0">
+               <children>
+                  <TextField fx:id="txtBlueClimbers" prefHeight="25.0" prefWidth="64.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="33.0" stroke="#ffffff00" strokeType="INSIDE" width="35.0" />
+                  <TextField fx:id="txtRedClimbers" prefHeight="25.0" prefWidth="64.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Button fx:id="btnBlueSwitch1" mnemonicParsing="false" prefHeight="50.0" prefWidth="75.0" text="Switch" textFill="BLUE" />
+                        <Button fx:id="btnRedSwitch1" mnemonicParsing="false" prefHeight="50.0" prefWidth="75.0" text="Switch" textFill="RED" />
+                     </children>
+                  </VBox>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="75.0" stroke="#ffffff00" strokeType="INSIDE" width="25.0" />
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Button fx:id="btnBlueScale" mnemonicParsing="false" prefHeight="50.0" prefWidth="75.0" text="Scale" textFill="BLUE" />
+                        <Button fx:id="btnRedScale" mnemonicParsing="false" prefHeight="50.0" prefWidth="75.0" text="Scale" textFill="RED" />
+                     </children>
+                  </VBox>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="75.0" stroke="#ffffff00" strokeType="INSIDE" width="25.0" />
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Button fx:id="btnBlueSwitch2" mnemonicParsing="false" prefHeight="50.0" prefWidth="75.0" text="Switch" textFill="BLUE" />
+                        <Button fx:id="btnRedSwitch2" mnemonicParsing="false" prefHeight="50.0" prefWidth="75.0" text="Switch" textFill="RED" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="btnBlueVault" mnemonicParsing="false" prefHeight="50.0" prefWidth="75.0" text="Vault score" textFill="BLUE" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="50.0" stroke="#ffffff00" strokeType="INSIDE" width="125.0" />
+                  <Button fx:id="btnRedVault" mnemonicParsing="false" prefHeight="50.0" prefWidth="75.0" text="Vault score" textFill="RED" />
+               </children>
+            </HBox>
+            <Button fx:id="btnStart" mnemonicParsing="false" onAction="#handleStart" prefHeight="75.0" prefWidth="100.0" text="Start" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="25.0" stroke="#ffffff00" strokeType="INSIDE" width="150.0" />
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
